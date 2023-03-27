@@ -5,32 +5,115 @@
 
 .wrapper{
     border: 1px solid #F08080;
-    height: 700px;
-    width: 100%;
+    height: auto;
+    width: 90%;
     margin: 0 auto;
 
 }
 .header{
+    background-image: url("../images/banner.jpg");
+   
     border: 1px solid #F08080;
-    height: 130px;
-    width: 100%;
-    background: #ffefd5;
-    
-
-
+    height: 200px;
+    width: 100%; 
 }
+
 .menu{
-    border: 1px solid hwb(0 35% 42% / 0);
+    border: 1px solid #F08080 ;
     height: 50px;
     width: 100%;
     background: #FFE4E1;
 }
+ul.list_menu {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    list-style: none;
+    margin: 0 auto;
+    line-height: 27px;
+}
+ul.list_menu li:hover {
+    background: darkseagreen;
+}
+ul.list_menu li a {
+    text-decoration: none;
+    text-align: center;
+    color: firebrick;
+}
+ul.list_menu li {
+    float: left;
+    margin: 7px;
+    padding: 5px;
+}
+
+
 #main{
     border: 1px solid #F08080;
-    height: 400px;
+    height: auto;
     width: 100%;
+   
+}
+
+.sidebar{
+    border: 1px solid #A0522D;
+    height: 390px;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 5px  ;
+    float: left;
+
+}
+ul.list_sidebar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 27px;
+}
+ul.list_sidebar li:hover {
+    background: darkseagreen;
+}
+ul.list_sidebar li a {
+    text-decoration: none;
+    text-align: left;
+    color: firebrick;
+    display: block;
+}
+ul.list_sidebar li {
+   
+    margin: 7px;
+    padding: 5px;
+}
 
 
+.maincontent{
+    border: 1px solid #A0522D;
+    height: auto;
+    width: 78%;
+    margin-top: 5px;
+    margin-left: 10px  ;
+    float: right;
+  
+}
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+ul.product_list li {
+    height: 300px;
+    width: 18%;
+    border: 1px dashed #000;
+    margin: 5px;
+    float: left;
+    background: #FFF0F5;
+    
+}
+
+ul.product_list li img {
+    width: 100%;
 }
 .footer{
     border: 1px solid #F08080;
@@ -39,4 +122,7 @@
     background: #FFE4E1;
 
 
+}
+.clear{
+    clear: both;
 }
