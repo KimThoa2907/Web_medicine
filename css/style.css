@@ -1,0 +1,42 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    border: 1px solid #F08080;
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.header{
+    border: 1px solid #F08080;
+    height: 130px;
+    width: 100%;
+    background: #ffefd5;
+    
+
+
+}
+.menu{
+    border: 1px solid hwb(0 35% 42% / 0);
+    height: 50px;
+    width: 100%;
+    background: #FFE4E1;
+}
+#main{
+    border: 1px solid #F08080;
+    height: 400px;
+    width: 100%;
+
+
+}
+.footer{
+    border: 1px solid #F08080;
+    height: 150px;
+    width: 100%;
+    background: #FFE4E1;
+
+
+}
