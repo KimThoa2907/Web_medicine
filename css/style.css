@@ -100,6 +100,7 @@ ul.product_list {
     margin: 0;
     list-style: none;
     width: 100%;
+
 }
 
 ul.product_list li {
@@ -109,19 +110,41 @@ ul.product_list li {
     margin: 5px;
     float: left;
     background: #FFF0F5;
+    height: 292px;
     
 }
 
+ul.product_list a {
+    text-decoration: none;
+}
 ul.product_list li img {
     width: 100%;
 }
+
+p.price_product {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+p.title_product {
+    text-align: center;
+    margin: revert;
+    font-size: 15px;
+    font-weight: bold;
+    color: brown;
+}
+
 .footer{
     border: 1px solid #F08080;
     height: 150px;
     width: 100%;
     background: #FFE4E1;
-
-
+}
+p.footer_copyright {
+    text-align: center;
+    font-size: 17px;
+    color: brown;
 }
 .clear{
     clear: both;
