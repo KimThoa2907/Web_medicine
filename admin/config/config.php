@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost","root","","web_mql_medicine");
+$mysqli = new mysqli("localhost","root","","medicine");
 
 // Check connection
 if ( $mysqli->connect_errno ) {
