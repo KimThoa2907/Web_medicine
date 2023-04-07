@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="./css/styleadmin.css">
     </head>
     <body>
-        <h3 class="title_admin">Welcome to Admin</h3>
-        <div class="wrapper">
+       
+        <div class="wrapper" style="background-color: floralwhite;">
         <?php
             include("config/config.php");
             include ("./modules/header.php");

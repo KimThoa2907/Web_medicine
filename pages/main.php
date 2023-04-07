@@ -19,6 +19,13 @@
             elseif($tam == 'tintuc'){
                 include("main/tintuc.php");
             }
+            elseif($tam == 'dangky'){
+                include("main/dangky.php");
+            }
+            elseif($tam == 'dangnhap'){
+                include("main/dangnhap.php");
+            }
+
             elseif($tam == 'lienhe'){
                 include("main/lienhe.php");
             }else{

@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar" style="height: 665px">
                 <ul class="list_sidebar">
                     <li><a href="index.php?quanly=danhmucsanpham&id=1">Dược phẩm</a></li>
                     <li><a href="index.php?quanly=danhmucsanpham&id=2">Chăm sóc sức khỏe</a></li>

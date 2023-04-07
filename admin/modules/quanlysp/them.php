@@ -1,56 +1,64 @@
 
 <p>Thêm sản phẩm</p>
 
-<table border="1" width="50%" style="border-collapse: collapse;">
-  <form method="POST" action="modules/quanlydanhmucsp/xuly.php">
+<table border="1" width="100%" style="border-collapse: collapse; ">
+  <form method="POST" action="modules/quanlysp/xuly.php" enctype="multipart/form-data">
     <tr>
-        <td>Tên danh mục</td>
+        <td>Tên sản phẩm</td>
         <td><input type="text" name="Tensanpham"></td>
     </tr>
 
     <tr>
         <td>Mã sản phẩm</td>
-        <td><input type="text" name="Masanpham"></td>
+        <td><input type="text" name="masp"></td>
     </tr>
 
     <tr>
         <td>Gía sản phẩm</td>
-        <td><input type="text" name="Giasanpham"></td>
+        <td><input type="text" name="giasp"></td>
     </tr>
 
     <tr>
         <td>Số lượng </td>
-        <td><input type="text" name="Soluong"></td>
+        <td><input type="text" name="soluong"></td>
     </tr>
 
     <tr>
         <td>Hình ảnh</td>
-        <td><input type="text" name="Hinhanh"></td>
+        <td><input type="file" name="hinhanh"></td>
     </tr>
-
-    <tr>
-        <td> Tóm tắt</td>
-        <td><textarea rows="5" name="Tomtat"></td>
-    </tr>
-
-
     <tr>
         <td>Nội dung</td>
-        <td><textarea rows="5" name="Noidung"></td>
+        <td><textarea rows="10" name="noidung" style=" width: 1176px; height: 126px;"></textarea></td>
     </tr>
-
-    
     <tr>
-        <td>Trình trạng</td>
+        <td>Danh mục sản phẩm</td>
         <td>
-          <select>
-              <option>Kích hoạt</option>
-              <option>Ẩn</option>
+          <select name="danhmuc">
+            <?php
+                $sql_danhmuc= "SELECT * FROM  tbl_danhmuc ORDER BY  ID_Danhmuc DESC";
+                $query_danhmuc= mysqli_query($mysqli, $sql_danhmuc);
+                while($dong_danhmuc = mysqli_fetch_array($query_danhmuc)){
+            ?>
+              <option value="<?php  echo $dong_danhmuc['ID_Danhmuc']?>"><?php  echo $dong_danhmuc['Tendanhmuc']?></option>
+              <?php
+                }
+              ?>
+             
           </select>
         </td>
     </tr>
     <tr>
-        <td colspan="2"><input type="submit" name="Themsanpham" value="Thêm danh mục sản phẩm"></td>
+        <td>Tình trạng</td>
+        <td>
+          <select name="tinhtrang">
+              <option value="1">Kích hoạt</option>
+              <option value="0">Ẩn</option>
+          </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" name="Themsanpham" value="Thêm sản phẩm"></td>
     </tr>
   </form>
 
